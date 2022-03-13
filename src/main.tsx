@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.module.scss';
 import App from './App';
 
-import 'tailwindcss/tailwind.css';
+import flexible from 'lib-flexible-fix';
+
+flexible(window, document);
 
 ReactDOM.render(
   <React.StrictMode>

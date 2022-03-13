@@ -7,5 +7,8 @@ module.exports = {
   coverageProvider: 'v8',
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleDirectories: ['node_modules', './src'],
-  rootDir: './src',
+  rootDir: '.',
+  moduleNameMapper: {
+    '^@/utils(.*)$': '<rootDir>/src/utils$1',
+  },
 };

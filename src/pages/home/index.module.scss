@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  font-family: siyuanheiti;
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.content {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+
+  .poemTitle {
+    font-size: 19px;
+  }
+}
