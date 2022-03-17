@@ -1,13 +1,22 @@
 @import './styles/reset.css';
 
-//@font-face {
-//  font-family: "huangling";
+//@fonts-face {
+//  fonts-family: "huangling";
 //  src: local("huangling"),
-//  url("src/assets/font/huangling.ttf") format("truetype");
-//  font-weight: normal;
+//  url("src/assets/fonts/huangling.ttf") format("truetype");
+//  fonts-weight: normal;
 //}
-@font-face {
-  font-family: 'siyuanheiti';
-  src: local('siyuanheiti'), url('./assets/font/siyuanheiti.otf') format('opentype');
-  font-weight: normal;
+//@fonts-face {
+//  fonts-family: 'siyuanheiti';
+//  src: local('siyuanheiti'), url('./assets/fonts/siyuanheiti.otf') format('opentype');
+//  fonts-weight: normal;
+//}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  background-color: #221f21;
+  color: #cecccb;
 }

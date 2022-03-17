@@ -6,6 +6,13 @@ import path from 'path';
 // https://vitejs.dev/config/
 // eslint-disable-next-line import/no-unused-modules
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/styles/_mixins";`,
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
