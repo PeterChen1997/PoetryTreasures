@@ -3,9 +3,12 @@ import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import path from 'path';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // https://vitejs.dev/config/
 // eslint-disable-next-line import/no-unused-modules
 export default defineConfig({
+  base: isProduction ? `https://bunny-base.b-cdn.net` : '',
   css: {
     preprocessorOptions: {
       scss: {
